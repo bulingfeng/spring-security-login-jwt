@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+
+mybatis-plus:
+  type-aliases-package: com.example.entity
+  mapper-locations: classpath:/mapper/*Mapper.xml
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/spring-boot-login
+    username: root
+    password: mac666
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    root: debug
+
+# jwt的相关设置
+
+jwt:
+  header: JWTHeaderName
+  secret: aabbccdd
+  expiration: 3600000
